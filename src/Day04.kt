@@ -56,7 +56,7 @@ fun main() {
             inicioRango2 = rangos[i-1]
             finRango2 = rangos[i]
 
-            if ((inicioRango1 <= inicioRango2 && finRango1 >= finRango2) ||(inicioRango2 <= inicioRango1 && finRango2 >= finRango1)) {
+            if ((inicioRango2 in inicioRango1..finRango1)||(inicioRango1 in inicioRango2..finRango2)||(finRango1 in inicioRango2..finRango2)||(finRango2 in inicioRango1..finRango1)) {
                 paresContenidos++
             }
 
